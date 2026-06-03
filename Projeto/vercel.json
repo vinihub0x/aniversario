@@ -1,0 +1,5 @@
+# Vercel Deployment Configuration
+{
+  "buildCommand": "",
+  "outputDirectory": ""
+}

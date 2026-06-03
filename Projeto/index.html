@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicoly - Para Você ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="floating-hearts">
+            <div class="heart-float"></div>
+            <div class="heart-float"></div>
+            <div class="heart-float"></div>
+            <div class="heart-float"></div>
+        </div>
+
+        <div class="hero-content fade-in">
+            <div class="progress-container">
+                <p class="progress-label">Carregando memórias...</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="barraProgresso"></div>
+                </div>
+            </div>
+
+            <h1 class="hero-title">NICOLY</h1>
+            <p class="hero-subtitle">Feliz Aniversário! ❤️</p>
+
+            <button class="btn-primary" id="btnAbrirPresente" onclick="abrirModalTexto()">
+                Abrir Presente ❤️
+            </button>
+
+            <p class="hero-message">Amo você mais que tudo</p>
+        </div>
+    </section>
+
+    <!-- CONTADOR DE RELACIONAMENTO -->
+    <section class="relationship-counter" id="contador">
+        <div class="container">
+            <h2 class="section-title">Estamos Juntos Há</h2>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <span class="counter-value" id="dias">0</span>
+                    <span class="counter-label">Dias</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-value" id="meses">0</span>
+                    <span class="counter-label">Meses</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-value" id="anos">0</span>
+                    <span class="counter-label">Anos</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-value" id="horas">0</span>
+                    <span class="counter-label">Horas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE / GALERIA -->
+    <section class="gallery-section" id="galeria">
+        <div class="container">
+            <h2 class="section-title">Nossas Memórias</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card" onclick="abrirModal(1)">
+                    <div class="card-image" style="background-image: url('fotos/foto1.jpeg')"></div>
+                    <h3 class="card-title">Nossas Primeiras Fotos</h3>
+                    <p class="card-date">04/02/2025</p>
+                </div>
+
+                <div class="gallery-card" onclick="abrirModal(2)">
+                    <div class="card-image" style="background-image: url('fotos/foto4.jpeg')"></div>
+                    <h3 class="card-title">Nossa Decisão</h3>
+                    <p class="card-date">13/02/2026</p>
+                </div>
+
+                <div class="gallery-card" onclick="abrirModal(3)">
+                    <div class="card-image" style="background-image: url('fotos/foto7.jpeg')"></div>
+                    <h3 class="card-title">A Gente Feliz</h3>
+                    <p class="card-date">21/02/2027</p>
+                </div>
+
+                <div class="gallery-card" onclick="abrirModal(4)">
+                    <div class="card-image" style="background-image: url('fotos/foto10.jpeg')"></div>
+                    <h3 class="card-title">Eu na Sua Casa</h3>
+                    <p class="card-date">28/02/2028</p>
+                </div>
+
+                <div class="gallery-card" onclick="abrirModal(5)">
+                    <div class="card-image" style="background-image: url('fotos/foto13.jpeg')"></div>
+                    <h3 class="card-title">Muitos Outros Momentos</h3>
+                    <p class="card-date">Sempre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO MÚSICA -->
+    <section class="music-section" id="musica">
+        <div class="container">
+            <h2 class="section-title">Nossa Música 🎵</h2>
+            <div class="music-player">
+                <button class="btn-music" id="btnMusica" onclick="toggleMusica()">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">Tocar Música</span>
+                </button>
+                <audio id="audioMusica" style="display: none;">
+                    <!-- Adicione a URL da música aqui -->
+                    <!-- <source src="musica.mp3" type="audio/mpeg"> -->
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CARTA EMOCIONAL -->
+    <section class="letter-section" id="carta">
+        <div class="container">
+            <div class="letter-card glassmorphism">
+                <h2 class="letter-title">Uma Mensagem Para Você</h2>
+                <p class="letter-content">
+                    Quando te conheci eu não imaginava que você se tornaria uma das pessoas mais importantes da minha vida.
+                </p>
+                <p class="letter-content">
+                    Você esteve presente em momentos difíceis, me ajudou a crescer, a encontrar direção e a acreditar mais em mim.
+                </p>
+                <p class="letter-content">
+                    Você me fez sonhar com um futuro, construir objetivos e imaginar uma vida inteira ao seu lado.
+                </p>
+                <p class="letter-content">
+                    Ainda estou aprendendo todos os dias, mas uma coisa nunca mudou: o amor que sinto por você.
+                </p>
+                <p class="letter-content">
+                    Obrigado por cada conversa, cada abraço, cada risada e cada momento que construímos juntos.
+                </p>
+                <p class="letter-content letter-final">
+                    Eu amo cada pedacinho seu. ❤️
+                </p>
+                <div class="letter-decoration">💕</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ / FINAL MESSAGE -->
+    <section class="final-message" id="rodape">
+        <div class="final-content fade-in">
+            <h2 class="final-title">Obrigado por Existir</h2>
+            <p class="final-text">Você é a minha pessoa favorita</p>
+            <p class="final-text final-emphasis">Eu te amo, Nicoly ❤️</p>
+        </div>
+    </section>
+
+    <!-- MODAL DE GALERIA -->
+    <div class="modal" id="modal">
+        <button class="btn-close" onclick="fecharModal()">✕</button>
+        
+        <div class="modal-container">
+            <div class="modal-content">
+                <img id="imagemModal" src="" alt="Foto" class="modal-image">
+                <p id="textoModal" class="modal-texto"></p>
+                
+                <div class="modal-indicator">
+                    <span id="indicadorFoto" class="indicator-text"></span>
+                </div>
+            </div>
+            
+            <div class="modal-controls">
+                <button class="btn-nav" onclick="voltarFoto()">◀</button>
+                <button class="btn-nav" onclick="avancarFoto()">▶</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE TEXTO EMOCIONAL -->
+    <div class="modal modal-emotional" id="modalTextoEmocional">
+        <button class="btn-close" onclick="fecharModalTexto()">✕</button>
+        
+        <div class="modal-container">
+            <div class="modal-content modal-text-content">
+                <p class="emotional-text">
+                    Quando eu te conheci, te achava chata pra krl, e até hj eu acho. voce me ajuda constantemente, ajudou com a fulana, ajudou a me recuperar mentalmente, me ajudou a me dar um foco pra minha vida e pela primeira vez, quero criar uma família. eu e voce, a mulher que eu mais amo, quero casar e ter filhos. desculpa pelos meus vários erros, eu to melhorando aos pouquinhos, sei que vou errar mais algumas vezes, não sou perfeito, mas prometo não cometer os mesmos erros anteriores. te amo, nicoly, te amo... hoje tem né? rs
+                </p>
+                <div class="heart-decoration">💕</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

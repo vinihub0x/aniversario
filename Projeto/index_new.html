@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="coracao/heart.png" alt="heart" class="heart">
+<img src="coracao/heart.png" alt="heart2" class="heart2">
+<img src="coracao/heart.png" alt="heart3" class="heart3">
+<img src="coracao/heart.png" alt="heart4" class="heart4">
+<div class="quadrado"></div>
+<div class="quadrado2"></div>
+<div class="barra"></div>
+<div class="caixa"></div>
+<div class="caixa2"></div>
+<div class="carregar">
+    <h3>Carregando memorias...</h3>
+</div>
+<div class="h1">
+    <h1>NICOLY</h1>
+</div>
+<div class="h2">
+    <h2>Feliz Aniversario!</h2>
+</div>
+<div class="abrir">
+    <h3>Abrir Presente! ❤</h3>
+</div>
+<div class="cem">
+    <h3>Amo voce mais que tudo, safada</h3>
+</div>
+<div class="linha">
+    <h3> Nossa linha do tempo</h3>
+</div>
+<div class="texto">
+    <h3>Acho bom voce acertar as perguntas</h3>
+</div>
+<div class="fim">
+    <h3>Parabens, voce acertou todas as perguntas! Te amo muito, minha vida!</h3>
+</div>
+<div class="card1" onclick="abrirModal(1)"></div>
+<div class="card2" onclick="abrirModal(2)"></div>
+<div class="card3" onclick="abrirModal(3)"></div>
+<div class="card4" onclick="abrirModal(4)"></div>
+<div class="card5" onclick="abrirModal(5)"></div>
+<div class="avancar"></div>
+<div class="voltar"></div>
+<div class="seta1">
+    <h3><</h3>
+</div>
+<div class="seta2">
+    <h3>></h3>
+</div>
+<div class="data1">
+    <h3>04/02/2025</h3>
+</div>
+<div class="data2">
+    <h3>13/02/2026</h3>
+</div>
+<div class="data3">
+    <h3>21/02/2027</h3>
+</div>
+<div class="data4">
+    <h3>28/02/2028</h3>
+</div>
+<div class="data5">
+    <h3>Hoje:</h3>
+</div>
+<div class="p1">
+    <h3>Nossas primeiras fotos</h3>
+</div>
+<div class="p2">
+    <h3>Nossa decisão</h3>
+</div>
+<div class="p3">
+    <h3>A gente feliz</h3>
+</div>
+<div class="p4">
+    <h3>Eu na sua casa</h3>
+</div>
+<div class="p5">
+    <h3>Muitos outros</h3>
+</div>
+
+<!-- MODAL CARROSSEL -->
+<div class="modal" id="modal">
+     <button class="btn-fechar" onclick="fecharModal()">✕</button>
+     
+     <div class="modal-container">
+          <div class="modal-content">
+               <img id="imagemModal" src="" alt="Foto" class="modal-image">
+               <p id="textoModal" class="modal-texto"></p>
+               
+               <div class="modal-indicador">
+                    <span id="indicadorFoto" class="indicador-texto"></span>
+               </div>
+          </div>
+          
+          <div class="modal-controles">
+               <button class="btn-controle btn-voltar" onclick="voltarFoto()">
+                    <span>◀</span>
+               </button>
+               <button class="btn-controle btn-avancar" onclick="avancarFoto()">
+                    <span>▶</span>
+               </button>
+          </div>
+     </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
